@@ -59,12 +59,12 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@savchenko91/rc-redux-api-mw@^1.0.28":
-  version "1.0.28"
-  resolved "https://registry.yarnpkg.com/@savchenko91/rc-redux-api-mw/-/rc-redux-api-mw-1.0.28.tgz#935496eee63a3e5d5337e041387fdcca3dd2559c"
-  integrity sha512-hCbsNuNjyfGp/wLzljeGBY7ByB7g0+YQp9HI/0o/fn9ycd3qwVozD16aVGC5fiXQ+Z1tg1L7uSVgSBM5LiSsIw==
+"@savchenko91/rc-redux-api-mw@^1.0.29":
+  version "1.0.29"
+  resolved "https://registry.yarnpkg.com/@savchenko91/rc-redux-api-mw/-/rc-redux-api-mw-1.0.29.tgz#9b9333c2f1da7844ce4307734bec4c8875f603d5"
+  integrity sha512-xdNjD5pUcApRnHrQvqs8jhkpENSxgo2ulo1Z0mS58ju9CwtMs4xMJq/Tb5cHsVy/j+NDTfLZ6pfbdpF1CFIB+A==
   dependencies:
-    redux "^4.0.5"
+    "@types/redux" "^3.6.0"
 
 "@testing-library/user-event@^12.1.10":
   version "12.6.0"
@@ -155,6 +155,13 @@
   integrity sha512-6LBtAQBN34i7SI5X+Qs4zpTEZO1tTDZ6sZ9fzFjYwTl3nLQXaBtwYdoV44CzNnyKu438xJ1lSIYyw0YMvunESw==
   dependencies:
     redux "^4.0.5"
+
+"@types/redux@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@types/redux/-/redux-3.6.0.tgz#f1ebe1e5411518072e4fdfca5c76e16e74c1399a"
+  integrity sha1-8evh5UEVGAcuT9/KXHbhbnTBOZo=
+  dependencies:
+    redux "*"
 
 "@typescript-eslint/eslint-plugin@^4.11.1":
   version "4.12.0"
@@ -1721,7 +1728,7 @@ read-pkg@^2.0.0:
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
 
-redux@^4.0.0, redux@^4.0.5:
+redux@*, redux@^4.0.0, redux@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
   integrity sha512-VSz1uMAH24DM6MF72vcojpYPtrTUu3ByVWfPL1nPfVRb5mZVTve5GnNCUV53QM/BZ66xfWrm0CTWoM+Xlz8V1w==

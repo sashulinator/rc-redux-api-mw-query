@@ -18,7 +18,7 @@
     "prepare": "rm -rf dist && npm run build"
   },
   "dependencies": {
-    "@savchenko91/rc-redux-api-mw": "^1.0.28",
+    "@savchenko91/rc-redux-api-mw": "^1.0.29",
     "@types/qs": "^6.9.5",
     "qs": "^6.9.6",
     "redux": "^4.0.5"
