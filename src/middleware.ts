@@ -4,10 +4,8 @@ import { REDUX_API_MIDDLEWARE, APIAction } from '@savchenko91/rc-redux-api-mw'
 
 import qs from 'qs'
 
-import { APIActionQs } from './type'
-
 const refreshToken = (): Middleware<Dispatch<APIAction>> => {
-  return () => (next) => async (action: APIActionQs) => {
+  return () => (next) => async (action: APIAction) => {
     if (action.type !== REDUX_API_MIDDLEWARE) {
       return next(action)
     }
