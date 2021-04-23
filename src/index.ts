@@ -1,7 +1,3 @@
-import middleware from './middleware'
-
-export default middleware
-
-export * from '@savchenko91/rc-redux-api-mw'
+export { default } from './middleware'
 
 export * from './type'
