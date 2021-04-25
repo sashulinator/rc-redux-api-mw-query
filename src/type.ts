@@ -1,11 +1,17 @@
 import { IStringifyOptions } from 'qs'
 
 declare module '@savchenko91/rc-redux-api-mw/dist/type.d' {
-  export interface APIAction<ResponseBody = unknown, RequestBody = unknown, Payload = unknown>
-    extends Omit<RequestInit, 'headers' | 'body'> {
+  type ActionName = 'endAction' | 'APIAction'
+
+  export interface APIAction<
+    ResponseBody = unknown,
+    RequestBody = unknown,
+    Payload = unknown,
+    DispatchReturns extends ActionName = 'APIAction'
+  > extends Omit<RequestInit, 'headers' | 'body'> {
     url: string
     type: string
-    returnResponse?: boolean
+    dispatchReturns?: DispatchReturns
     headers?: APIHeaders
     body?: RequestBody
     responseBodyType?: ResponseBodyType
