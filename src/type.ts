@@ -7,7 +7,7 @@ declare module '@savchenko91/rc-redux-api-mw/dist/type.d' {
   export interface APIAction<
     ResponseBody = unknown,
     RequestBody = unknown,
-    Payload = undefined,
+    Payload = unknown,
     DispatchReturns extends ActionName = 'APIAction'
   > extends Omit<RequestInit, 'headers' | 'body'> {
     url: string
